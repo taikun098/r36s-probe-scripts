@@ -1,0 +1,26 @@
+import paramiko
+c=paramiko.SSHClient()
+c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect('192.168.0.30', username='user', password='******', timeout=10, allow_agent=False, look_for_keys=False)
+def run(cmd):
+    i,o,e=c.exec_command(cmd)
+    out=o.read().decode('utf-8','replace')
+    err=e.read().decode('utf-8','replace')
+    return out, err
+S='echo 1 | sudo -S '
+print('=== modprobe.d 配置 ===')
+out,err=run(S+'ls -la /mnt/r36s/etc/modprobe.d/ 2>&1; echo ---; cat /mnt/r36s/etc/modprobe.d/*.conf 2>&1')
+print(out if out else err)
+print('\n=== udev 无线规则 ===')
+out,err=run(S+'grep -rl "8188\|rtl\|wifi\|wlan" /mnt/r36s/etc/udev/rules.d/ 2>/dev/null; echo ---; cat /mnt/r36s/etc/udev/rules.d/*.rules 2>/dev/null | grep -i "8188\|wifi\|wlan"')
+print(out if out else '(无)')
+print('\n=== rc.local / 启动脚本 ===')
+out,err=run(S+'cat /mnt/r36s/etc/rc.local 2>&1 | grep -i "8188\|wifi\|wlan\|modprobe"')
+print(out if out else '(rc.local无相关)')
+print('\n=== r8188eu.ko 实际位置 ===')
+out,err=run(S+'find /mnt/r36s/lib/modules/4.4.189 -name "r8188eu.ko" 2>/dev/null')
+print(out if out else '(未找到)')
+print('\n=== 8188EU 固件 ===')
+out,err=run(S+'ls /mnt/r36s/lib/firmware/rtlwifi/rtl8188eufw.bin 2>&1')
+print(out if out else err)
+c.close()

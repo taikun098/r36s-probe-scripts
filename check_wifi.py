@@ -1,0 +1,31 @@
+import paramiko
+c=paramiko.SSHClient()
+c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect('192.168.0.30', username='user', password='******', timeout=10, allow_agent=False, look_for_keys=False)
+def run(cmd):
+    i,o,e=c.exec_command(cmd)
+    out=o.read().decode('utf-8','replace')
+    err=e.read().decode('utf-8','replace')
+    return out, err
+S='echo 1 | sudo -S '
+print('=== 卡是否在服务器 ===')
+out,err=run('lsblk | grep -E "sdb|87.9"')
+print(out if out else '卡不在服务器')
+if 'sdb' in (out or ''):
+    run(S+'mkdir -p /mnt/r36s; sudo mount /dev/sdb2 /mnt/r36s 2>/dev/null')
+    print('\n=== R36S 无线驱动加载配置 ===')
+    out,err=run(S+'cat /mnt/r36s/etc/modules 2>&1')
+    print('/etc/modules:', out if out else err)
+    out,err=run(S+'cat /mnt/r36s/etc/modules-load.d/*.conf 2>&1')
+    print('modules-load.d:', out if out else '(无)')
+    print('\n=== 无线驱动模块确认 ===')
+    out,err=run(S+'ls /mnt/r36s/lib/modules/4.4.189/kernel/drivers/net/wireless/rtl8188eu/ 2>&1')
+    print(out if out else err)
+    out,err=run(S+'find /mnt/r36s/lib/modules/4.4.189 -iname "*8188fu*" -o -iname "*rtl8188fu*" 2>/dev/null')
+    print('8188fu驱动:', out if out else '(无)')
+    print('\n=== NetworkManager 无线配置 ===')
+    out,err=run(S+'ls /mnt/r36s/etc/NetworkManager/system-connections/ 2>&1')
+    print(out if out else err)
+    out,err=run(S+'cat /mnt/r36s/etc/NetworkManager/system-connections/JiaYuan.nmconnection 2>&1')
+    print('JiaYuan配置:'); print(out if out else err)
+c.close()

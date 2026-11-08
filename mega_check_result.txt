@@ -1,0 +1,9 @@
+  mega_dl.log 381 bytes
+=== log exists: True ===
+﻿python : STARTING mega download...
+所在位置 行:2 字符: 75
++ ... dtb_probe"; python -u mega_dl.py 2>D:\R36S_backup_20261015\darkos\meg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (STARTING mega download...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

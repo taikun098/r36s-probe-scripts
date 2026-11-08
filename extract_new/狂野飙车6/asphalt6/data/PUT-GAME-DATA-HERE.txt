@@ -1,0 +1,8 @@
+Place exactly one Asphalt 6: Adrenaline v1.3.3 APK directly in this data/ folder.
+Place the extracted v1.3.3 cache folder here too (for example data/asphalt6/).
+Keep every cache file, including .dat, .bin, intro.mp4 and configuration.
+Nested cache folders are accepted. Exactly one must contain file000000.dat.
+
+Coloque exatamente um APK v1.3.3 diretamente nesta pasta data/.
+Coloque aqui também a pasta do cache extraído (exemplo: data/asphalt6/).
+Não coloque o APK dentro da subpasta do cache.

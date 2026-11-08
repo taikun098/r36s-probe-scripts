@@ -1,0 +1,7 @@
+# The port's own switches (0 off, 1 on).
+# debug: the debug menu, bestiary, wardrobe, Choose Level, frame dumps and logs.
+# logs:  the log file on its own.
+# fps:   the frame-rate overlay; L3 switches it in the game, and it is kept here.
+debug=0
+logs=0
+fps=0

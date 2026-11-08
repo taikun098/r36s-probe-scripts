@@ -1,0 +1,30 @@
+## Before you do anything!
+- Read these instructions [Firmware Installation](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation)
+- The current dtb files you need are linked in here!
+
+## Align with dArkOS 01302026 Release
+- Fully Integrated Kodi 21.3 into the rg351mp build process with integrated missing libraries
+- Integrate Wifi and Bluetooth Firmware Pack thanks to Jason3x
+- Add [ZRam Manager](https://github.com/daffycodebug/ZRam-Manager-R36S) by daffycodebug to improve system performance in games.
+- Add [Wifi Toggle](https://github.com/Jason3x/wifi-toggle) 3.6 by Jason3x to toggle OTG and Host Mode for USB Storage access.
+- Fix PPSSPP mute on forced exit by disabling the kill service and updating controls.ini (delete all controls.ini from psp folder)
+- Support for the R36S-V12 2024-12-18
+- See [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki) for details and controls.
+
+### Firmware File
+[Mega](https://mega.nz/file/Izo3TRzA#6CAO5SIFsOxxPBbdwWZV6NvjHn5NJcur0XuVX_-fA3g)  -  [Onedrive](https://1drv.ms/u/c/ea159b785597670e/IQCFDwCK7Wh2T7hEvkeGW5uuAdHxmH6WWn35SJEKEc3xsfU?e=HORFat) - [Torrent](https://github.com/southoz/dArkOS-G80CA-RE/raw/main/resources/torrent/dArkOS_G80CA-RE_trixie_02062026.7z.torrent)
+SHA1 - f03badff281f41189a01399b9bfe5bfe34324bf4 
+
+## Update Patch for dArkOS RE 02062026
+- Includes dArkOS drastic as a selectable emulator
+- Add Screenscaper developer login to Emulatonstation
+- Fix Back Ground Music that impacted single SD Card users.
+- Fix Switch SD Scripts to update Kodi Libraries.
+- Remove rg351mp change LED script.
+
+### Update Installation
+- Download the [Update](https://mega.nz/file/lypj1aZY#NeyZz5_mvpC2-Jc-TBINtt7eNSHq5k9wii31VwfxFd0) 
+- Extract to the`ports` folder on the SD Card, 
+- Boot and select Ports 
+- Select Update-02062026 to apply 
+

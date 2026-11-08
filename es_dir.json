@@ -1,0 +1,66 @@
+[
+  {
+    "name": "es_input.cfg",
+    "path": "files/ROOTFS/etc/emulationstation/es_input.cfg",
+    "sha": "8d19213e936c8a564bc508656a6327c4b613976f",
+    "size": 1715,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/es_input.cfg?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/es_input.cfg",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/8d19213e936c8a564bc508656a6327c4b613976f",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/emulationstation/es_input.cfg",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/es_input.cfg?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/8d19213e936c8a564bc508656a6327c4b613976f",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/es_input.cfg"
+    }
+  },
+  {
+    "name": "es_systems.cfg",
+    "path": "files/ROOTFS/etc/emulationstation/es_systems.cfg",
+    "sha": "9f4f9abc6b1c485e038565f917704a66f1960fa7",
+    "size": 85127,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/es_systems.cfg?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/es_systems.cfg",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/9f4f9abc6b1c485e038565f917704a66f1960fa7",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/emulationstation/es_systems.cfg",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/es_systems.cfg?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/9f4f9abc6b1c485e038565f917704a66f1960fa7",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/es_systems.cfg"
+    }
+  },
+  {
+    "name": "music",
+    "path": "files/ROOTFS/etc/emulationstation/music",
+    "sha": "258d8ca81f9145f00009c784722a755c955e54dc",
+    "size": 14,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/music?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/music",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/258d8ca81f9145f00009c784722a755c955e54dc",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/emulationstation/music",
+    "type": "symlink",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/music?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/258d8ca81f9145f00009c784722a755c955e54dc",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/music"
+    }
+  },
+  {
+    "name": "themes",
+    "path": "files/ROOTFS/etc/emulationstation/themes",
+    "sha": "084b74229e12b817734a5babc5c9d7893aaf7aa1",
+    "size": 13,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/themes?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/themes",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/084b74229e12b817734a5babc5c9d7893aaf7aa1",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/emulationstation/themes",
+    "type": "symlink",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation/themes?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/084b74229e12b817734a5babc5c9d7893aaf7aa1",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/emulationstation/themes"
+    }
+  }
+]

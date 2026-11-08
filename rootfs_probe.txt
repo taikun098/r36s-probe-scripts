@@ -1,0 +1,7 @@
+size=7864320000
+b'hsqs' at abs offset 4375809952
+b'hsqs' at abs offset 4447503800
+b'hsqs' at abs offset 4554695644
+b'hsqs' at abs offset 4596198064
+b'hsqs' at abs offset 4844884785
+gzip region @6426009: 1f8b08080000000002ff6d616e2e74617200ecbd6977db56962edc9ff12bd0ca

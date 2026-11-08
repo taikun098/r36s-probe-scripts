@@ -1,0 +1,5 @@
+PortMaster OK
+gamelist.xml OK
+selected .sh copied: 60
+game dirs copied: 55
+missing dirs (5): Battle for Wesnoth, Marathon 2, Marathon Infinity, Marathon, OpenXcomEX

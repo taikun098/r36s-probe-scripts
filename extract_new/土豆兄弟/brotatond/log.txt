@@ -1,0 +1,248 @@
+umount: can't unmount /roms/ports/PortMaster/libs/frt_3.6.squashfs: Invalid argument
+sway.service essway.service
+Attempting to fullscreen app_id=frt_3.6
+[
+  {
+    "success": false,
+    "parse_error": false,
+    "error": "No matching node."
+  }
+]
+Failed, waiting to try again
+[GPTK]: Running in UINPUT output mode.
+Attempting to fullscreen app_id=frt_3.6
+[
+  {
+    "success": false,
+    "parse_error": false,
+    "error": "No matching node."
+  }
+]
+Failed, waiting to try again
+WARNING: Started the engine as `root`/superuser. This is a security risk, and subsystems like audio may not work correctly.
+Set the environment variable `GODOT_SILENCE_ROOT_WARNING` to 1 to silence this warning.
+     at: setup2 (main/main.cpp:1451)
+[1;34m[HACKSDL.info] Loading config
+[0m[1;34m[HACKSDL.info] No HACKSDL_LIBSDL_NAME set, will use RTLD_NEXT handler
+[0m[1;34m[HACKSDL.info] ---- Configuration BEGIN ----
+[0m[1;34m[HACKSDL.info] libsdl_name=RTLD_NEXT
+[0m[1;34m[HACKSDL.info] no_gamecontroller=0
+[0m[1;34m[HACKSDL.info] axis_modifier_button=(null)
+[0m[1;34m[HACKSDL.info] axis.leftx
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] axis.lefty
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] axis.rightx
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] axis.righty
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] axis.lefttrigger
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] axis.righttrigger
+[0m[1;34m[HACKSDL.info]     axis_modifier_shift=0
+[0m[1;34m[HACKSDL.info]     axis_digital=0
+[0m[1;34m[HACKSDL.info]     deadzone=-1
+[0m[1;34m[HACKSDL.info]     (-) virtual_map=no
+[0m[1;34m[HACKSDL.info]     (+) virtual_map=no
+[0m[1;34m[HACKSDL.info]     virtual_share=0
+[0m[1;34m[HACKSDL.info]     virtual_merge=1
+[0m[1;34m[HACKSDL.info] button_disable
+[0m[1;34m[HACKSDL.info]     button.a=0
+[0m[1;34m[HACKSDL.info]     button.b=0
+[0m[1;34m[HACKSDL.info]     button.x=0
+[0m[1;34m[HACKSDL.info]     button.y=0
+[0m[1;34m[HACKSDL.info]     button.back=0
+[0m[1;34m[HACKSDL.info]     button.guide=0
+[0m[1;34m[HACKSDL.info]     button.start=0
+[0m[1;34m[HACKSDL.info]     button.leftstick=0
+[0m[1;34m[HACKSDL.info]     button.rightstick=0
+[0m[1;34m[HACKSDL.info]     button.leftshoulder=0
+[0m[1;34m[HACKSDL.info]     button.rightshoulder=0
+[0m[1;34m[HACKSDL.info]     button.dpup=0
+[0m[1;34m[HACKSDL.info]     button.dpdown=0
+[0m[1;34m[HACKSDL.info]     button.dpleft=0
+[0m[1;34m[HACKSDL.info]     button.dpright=0
+[0m[1;34m[HACKSDL.info] controller_index_mapping
+[0m[1;34m[HACKSDL.info]     device.0=0
+[0m[1;34m[HACKSDL.info]     device.1=1
+[0m[1;34m[HACKSDL.info]     device.2=2
+[0m[1;34m[HACKSDL.info]     device.3=3
+[0m[1;34m[HACKSDL.info]     device.4=4
+[0m[1;34m[HACKSDL.info]     device.5=5
+[0m[1;34m[HACKSDL.info]     device.6=6
+[0m[1;34m[HACKSDL.info]     device.7=7
+[0m[1;34m[HACKSDL.info] device_disable
+[0m[1;34m[HACKSDL.info]     device.0=2
+[0m[1;34m[HACKSDL.info]     device.1=0
+[0m[1;34m[HACKSDL.info]     device.2=0
+[0m[1;34m[HACKSDL.info]     device.3=0
+[0m[1;34m[HACKSDL.info]     device.4=0
+[0m[1;34m[HACKSDL.info]     device.5=0
+[0m[1;34m[HACKSDL.info]     device.6=0
+[0m[1;34m[HACKSDL.info]     device.7=0
+[0m[1;34m[HACKSDL.info] video
+[0m[1;34m[HACKSDL.info]     get_display_mode_w=0
+[0m[1;34m[HACKSDL.info]     get_display_mode_h=0
+[0m[1;34m[HACKSDL.info]     set_display_mode_w=0
+[0m[1;34m[HACKSDL.info]     set_display_mode_h=0
+[0m[1;34m[HACKSDL.info]     get_window_size_w=0
+[0m[1;34m[HACKSDL.info]     get_window_size_h=0
+[0m[1;34m[HACKSDL.info]     set_window_size_w=0
+[0m[1;34m[HACKSDL.info]     set_window_size_h=0
+[0m[1;34m[HACKSDL.info] ---- Configuration END ----
+[0m[1;34m[HACKSDL.info] Initialization done
+[0mAttempting to fullscreen app_id=frt_3.6
+[
+  {
+    "success": false,
+    "parse_error": false,
+    "error": "No matching node."
+  }
+]
+Failed, waiting to try again
+Attempting to fullscreen app_id=frt_3.6
+[
+  {
+    "success": true
+  }
+]
+Successful, exiting
+ERROR: CrashReporter: Failed to collect logs in /roms/ports/brotatond//conf/Brotato/logs
+   at: call (modules/gdscript/gdscript_functions.cpp:775)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+WARNING: Can't open unpacked mods folder res://mods-unpacked/.
+     at: call (modules/gdscript/gdscript_functions.cpp:789)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+ERROR: File must be opened before use.
+   at: store_string (core/bind/core_bind.cpp:2277)
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+     at: cleanup (core/object.cpp:2074)
+ERROR: Resources still in use at exit (run with --verbose for details).
+   at: clear (core/resource.cpp:417)
+Godot Engine v3.6.stable.frt.8ca803cce - https://godotengine.org
+arm_release_ver: g13p0-01eac0, rk_so_ver: 11
+OpenGL ES 3.0 Renderer: Mali-G31
+Async. shader compilation: OFF
+ 
+Brotato v1.1.13.2
+INFO ModLoader:Store: Options override feature tag "editor". does not apply, skipping.
+INFO ModLoader:Store: Options override feature tag "epic". does not apply, skipping.
+INFO ModLoader:Store: Options override feature tag "steam". does not apply, skipping.
+DEBUG ModLoader:Loader: Autoload order
+[
+  "CrashReporter",
+  "BugReporter",
+  "Platform",
+  "ModLoaderStore",
+  "ModLoader",
+  "Utils",
+  "MenuData",
+  "ProgressData",
+  "AnnouncementManager",
+  "ItemService",
+  "SkinManager",
+  "ZoneService",
+  "RunData",
+  "SoundManager",
+  "SoundManager2D",
+  "MusicManager",
+  "Text",
+  "ChallengeService",
+  "InputService",
+  "WeaponService",
+  "TempStats",
+  "LinkedStats",
+  "DebugService",
+  "CoopService",
+  "FocusEmulatorSignal",
+  "EffectBehaviorService",
+  "EntityService",
+  "UIService"
+]
+INFO ModLoader:Loader: game_install_directory: /storage/godot/
+INFO ModLoader:UserProfile: No mod_ids inside "mod_list" for user profile "default" 
+INFO ModLoader:File: Can't open mod folder /storage/godot/mods (Error: 31)
+INFO ModLoader:Loader: No zipped mods found
+WARNING ModLoader:Loader: Can't open unpacked mods folder res://mods-unpacked/.
+INFO ModLoader:Loader: No mods were setup
+DEBUG ModLoader:UserProfile: Updated the active state of all mods, based on the current user profile "default"
+SUCCESS ModLoader:Loader: DONE: Loaded all meta data
+DEBUG ModLoader:Loader: mod data
+{
+
+}
+SUCCESS ModLoader:Loader: DONE: Completely finished loading mods
+SUCCESS ModLoader:Loader: DONE: Installed all script extensions
+local platform initialized
+DEBUG ModLoader:UserProfile: Updated the mod lists of all user profiles
+ProgressDataLoaderV3: Save path: user://user/save_v3_0.json
+LOG_PATH: user://user/log.txt
+ProgressData: Saved current profile id 0 to user://user/settings.json.
+ProgressData: Set current profile id to 0.
+ProgressDataLoaderV3: Save path: user://user/save_v3_0.json
+ProgressDataLoaderV3: Loading user://user/save_v3_0.json
+ProgressDataLoaderV3: Loading user://user/run_v3_0.json
+ProgressData: Saved current profile id 0 to user://user/settings.json.
+[GPTK]: Running in Fake Keyboard mode
+[GPTK]: Using ConfigFile ./brotato.gptk
+[GPTK]: Joystick 0 has game controller name 'retrogame_joypad'

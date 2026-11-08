@@ -1,0 +1,14 @@
+mega log size: 381
+=== mega log ===
+﻿python : STARTING mega download...
+所在位置 行:2 字符: 75
++ ... dtb_probe"; python -u mega_dl.py 2>D:\R36S_backup_20261015\darkos\meg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (STARTING mega download...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== python procs ===
+"python.exe","9624","Console","1","36,992 K"
+"python.exe","14232","Console","1","40,408 K"
+"python.exe","5436","Console","1","13,716 K"

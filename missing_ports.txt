@@ -1,0 +1,8 @@
+Battle for Wesnoth.sh
+Marathon 2.sh
+Marathon Infinity.sh
+Marathon.sh
+OpenXcomEX.sh
+alephone-marathon
+alephone-marathon2
+alephone-marathoninfinity

@@ -1,0 +1,48 @@
+===== k36s (rk3326-k36s-linux.dtb, 94890B) =====
+  display-subsystem: compat=[['rockchip,display-subsystem']] init=NoneB reset=None enable=None power=None
+  route-dsi: compat=[] init=NoneB reset=None enable=None power=None
+  mipi-dphy-rx0@ff2f0000: compat=[['rockchip,rk3326-mipi-dphy']] init=NoneB reset=None enable=None power=None
+  dsi@ff450000: compat=[['rockchip,px30-mipi-dsi']] init=NoneB reset=None enable=None power=None
+  panel@0: compat=[['simple-panel-dsi']] init=753B reset=gpio3@ff270000 pin15 flags1 enable=gpio0@ff040000 pin13 flags0 power=None
+  display-timings: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+===== k36 (rk3326-k36-linux.dtb, 93965B) =====
+  display-subsystem: compat=[['rockchip,display-subsystem']] init=NoneB reset=None enable=None power=None
+  route-dsi: compat=[] init=NoneB reset=None enable=None power=None
+  mipi-dphy-rx0@ff2f0000: compat=[['rockchip,rk3326-mipi-dphy']] init=NoneB reset=None enable=None power=None
+  dsi@ff450000: compat=[['rockchip,px30-mipi-dsi']] init=NoneB reset=None enable=None power=None
+  panel@0: compat=[['simple-panel-dsi']] init=370B reset=gpio3@ff270000 pin15 flags1 enable=gpio0@ff040000 pin13 flags0 power=None
+  display-timings: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+===== r36t (rk3326-r36t-linux.dtb, 94890B) =====
+  display-subsystem: compat=[['rockchip,display-subsystem']] init=NoneB reset=None enable=None power=None
+  route-dsi: compat=[] init=NoneB reset=None enable=None power=None
+  mipi-dphy-rx0@ff2f0000: compat=[['rockchip,rk3326-mipi-dphy']] init=NoneB reset=None enable=None power=None
+  dsi@ff450000: compat=[['rockchip,px30-mipi-dsi']] init=NoneB reset=None enable=None power=None
+  panel@0: compat=[['simple-panel-dsi']] init=753B reset=gpio3@ff270000 pin15 flags1 enable=gpio0@ff040000 pin13 flags0 power=None
+  display-timings: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+===== r36xx (rk3326-r36xx-linux.dtb, 93978B) =====
+  display-subsystem: compat=[['rockchip,display-subsystem']] init=NoneB reset=None enable=None power=None
+  route-dsi: compat=[] init=NoneB reset=None enable=None power=None
+  mipi-dphy-rx0@ff2f0000: compat=[['rockchip,rk3326-mipi-dphy']] init=NoneB reset=None enable=None power=None
+  dsi@ff450000: compat=[['rockchip,px30-mipi-dsi']] init=NoneB reset=None enable=None power=None
+  panel@0: compat=[['simple-panel-dsi']] init=773B reset=gpio3@ff270000 pin16 flags1 enable=None power=[158]
+  display-timings: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m0-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-rgb-pins: compat=[] init=NoneB reset=None enable=None power=None
+  lcdc-m1-sleep-pins: compat=[] init=NoneB reset=None enable=None power=None

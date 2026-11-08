@@ -1,0 +1,26 @@
+import paramiko
+c=paramiko.SSHClient()
+c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect('192.168.0.30', username='user', password='******', timeout=10, allow_agent=False, look_for_keys=False)
+def run(cmd):
+    i,o,e=c.exec_command(cmd)
+    out=o.read().decode('utf-8','replace')
+    err=e.read().decode('utf-8','replace')
+    return out, err
+S='echo 1 | sudo -S '
+print('=== 挂载系统分区 ===')
+out,err=run(S+'mkdir -p /mnt/r36s; sudo mount /dev/sdb2 /mnt/r36s 2>&1; echo M=$?')
+print(out if out else err)
+print('\n=== 确认挂载 ===')
+out,err=run(S+'ls /mnt/r36s | head -5')
+print(out if out else err)
+print('\n=== 检查 DM9601 驱动模块 ===')
+out,err=run(S+'find /mnt/r36s/lib/modules/4.4.189 -iname "*dm9601*" 2>/dev/null')
+print('dm9601.ko:', out if out else '(未找到)')
+print('\n=== 检查 rtl8188 驱动模块 ===')
+out,err=run(S+'find /mnt/r36s/lib/modules/4.4.189 -iname "*8188*" 2>/dev/null')
+print(out if out else '(未找到)')
+print('\n=== 检查无线固件 ===')
+out,err=run(S+'ls -la /mnt/r36s/lib/firmware/rtlwifi/ 2>&1')
+print(out if out else err)
+c.close()

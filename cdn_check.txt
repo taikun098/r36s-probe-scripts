@@ -1,0 +1,7 @@
+=== progress tail ===
+[#79a057 0B/0B CN:1 DL:0B]
+10/16 11:25:35 [[1;31mERROR[0m] CUID#7 - Download aborted. URI=http://gfs270n451.userstorage.mega.co.nz/dl/9rBgckOIb-Ep_QcXdv3pXv-oqPI3Sl5jOak_HeUf-uxzktVZzukEFpiqiIYyvjV_xSCcTywP17IIX7N9efpTMYRUxkLgi-JmNk_s_QJLtn9CRArF7vrefStNX-w3RwYl5WjiyntVelPjgIm-aLv_9pN42Zy5dS6cRQhNsmEd8JeUXFJ7Bki0bmo5RHVGHguljjaJB5i1GvUeYebu3VzOyrpGP2tZtVhOHcl4XBEnU3fbSGTdU3mppC47Yw
+Exception: [SocketCore.cc:875] errorCode=1 Failed to receive data, cause: An existing connection was forcibly closed by the remote host.
+(ERR):error occurred.
+If there are any errors, then see the log file. See '-l' option in help/man page for details.
+=== enc.bin missing ===

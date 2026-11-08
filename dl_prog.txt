@@ -1,0 +1,33 @@
+  aria2 (dir)
+  aria2.zip 2475379 bytes
+  aria2_bt.log 13215 bytes
+  dArkOS_G80CA-RE_trixie_02062026.7z (dir)
+  dArkOS_G80CA-RE_trixie_02062026.7z.aria2 1832 bytes
+  dArkOS_G80CA.torrent 286546 bytes
+  mega_dl.log 381 bytes
+=== aria2_bt.log tail ===
+                                                           
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#1f313a 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               

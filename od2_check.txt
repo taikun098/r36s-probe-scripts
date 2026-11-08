@@ -1,0 +1,31 @@
+=== aria2_od2.log ===
+﻿
+10/16 10:51:23 [[1;32mNOTICE[0m] Downloading 1 item(s)
+
+                                                                               
+[#44b531 0B/0B CN:1 DL:0B]
+10/16 10:51:24 [[1;32mNOTICE[0m] CUID#7 - Redirecting to https://onedrive.live.com/:u:/g/personal/EA159B785597670E/IQCFDwCK7Wh2T7hEvkeGW5uuAdHxmH6WWn35SJEKEc3xsfU?resid=EA159B785597670E!s8a000f8568ed4f76b844be47865b9bae&e=HORFat&download=1&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9lYTE1OWI3ODU1OTc2NzBlL0lRQ0ZEd0NLN1doMlQ3aEV2a2VHVzV1dUFkSHhtSDZXV24zNVNKRUtFYzN4c2ZVP2U9SE9SRmF0JmRvd25sb2FkPTE
+
+10/16 10:51:24 [[1;31mERROR[0m] CUID#7 - Download aborted. URI=https://1drv.ms/u/c/ea159b785597670e/IQCFDwCK7Wh2T7hEvkeGW5uuAdHxmH6WWn35SJEKEc3xsfU?e=HORFat&download=1
+Exception: [AbstractCommand.cc:351] errorCode=1 URI=https://onedrive.live.com/:u:/g/personal/EA159B785597670E/IQCFDwCK7Wh2T7hEvkeGW5uuAdHxmH6WWn35SJEKEc3xsfU?resid=EA159B785597670E!s8a000f8568ed4f76b844be47865b9bae&e=HORFat&download=1&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy9lYTE1OWI3ODU1OTc2NzBlL0lRQ0ZEd0NLN1doMlQ3aEV2a2VHVzV1dUFkSHhtSDZXV24zNVNKRUtFYzN4c2ZVP2U9SE9SRmF0JmRvd25sb2FkPTE
+  -> [SocketCore.cc:1019] errorCode=1 SSL/TLS handshake failure: Error: 操作成功完成。
+(0)
+
+10/16 10:51:24 [[1;32mNOTICE[0m] Download GID#44b53161d2729d37 not complete: D:/R36S_backup_20261015/darkos/dArkOS_od2.7z
+
+Download Results:
+gid   |stat|avg speed  |path/URI
+======+====+===========+=======================================================
+44b531|ERR |       0B/s|D:/R36S_backup_20261015/darkos/dArkOS_od2.7z
+
+Status Legend:
+(ERR):error occurred.
+
+aria2 will resume download if the transfer is restarted.
+If there are any errors, then see the log file. See '-l' option in help/man page for details.
+
+=== dir files ===
+  aria2_od2.log 1787
+  dArkOS_G80CA-RE_trixie_02062026.7z 0
+  dArkOS_G80CA-RE_trixie_02062026.7z.aria2 1832
+  dArkOS_G80CA.torrent 286546

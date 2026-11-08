@@ -1,0 +1,25 @@
+=== mega_dl2.log ===
+﻿python : STARTING mega download...
+所在位置 行:1 字符: 75
++ ... dtb_probe"; python -u mega_dl.py 2>D:\R36S_backup_20261015\darkos\meg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (STARTING mega download...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== mega_dl.log ===
+﻿python : STARTING mega download...
+所在位置 行:2 字符: 75
++ ... dtb_probe"; python -u mega_dl.py 2>D:\R36S_backup_20261015\darkos\meg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (STARTING mega download...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== files with recent mtime ===
+  aria2.zip 2475379 bytes age=587s
+  dArkOS_G80CA-RE_trixie_02062026.7z 0 bytes age=478s
+  dArkOS_G80CA-RE_trixie_02062026.7z.aria2 1832 bytes age=478s
+  dArkOS_G80CA.torrent 286546 bytes age=501s
+  mega_dl.log 381 bytes age=676s
+  mega_dl2.log 381 bytes age=103s

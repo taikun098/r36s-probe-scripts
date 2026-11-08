@@ -1,0 +1,65 @@
+root .sh count: 60
+root dirs count: 677
+--- root .sh (first 70) ---
+  2048.sh
+  Angband.sh
+  Battle for Wesnoth.sh
+  Blood.sh
+  Brogue.sh
+  C-Dogs.sh
+  Cannonball.sh
+  Cave Story-evo.sh
+  Cave Story.sh
+  Celeste Classic.sh
+  Celeste64.sh
+  CorsixTH.sh
+  Deltarune.sh
+  Devilutionx.sh
+  Doom 3.sh
+  Doom Engines.sh
+  Duke Nukem 3D.sh
+  Dune Legacy.sh
+  Dungeon Crawl Stone Soup.sh
+  Fallout 1.sh
+  Fallout 2.sh
+  FreeCiv.sh
+  FreeDink.sh
+  Frozen Bubble.sh
+  Hexen 2 - Portal of Praevus.sh
+  Jazz2 Resurrection.sh
+  Marathon 2.sh
+  Marathon Infinity.sh
+  Marathon.sh
+  Mindustry.sh
+  Minetest.sh
+  Neverball.sh
+  OpenJazz.sh
+  OpenRA.sh
+  OpenRCT2.sh
+  OpenSupaplex.sh
+  OpenTTD.sh
+  OpenXcomEX.sh
+  Perfect Dark.sh
+  Quake 3.sh
+  SDLPoP.sh
+  SRB2.sh
+  Seven Kingdoms - Ancient Adversaries.sh
+  Shadow Warrior.sh
+  Shattered Pixel Dungeon.sh
+  Sonic 1.sh
+  Sonic 2.sh
+  Sonic CD.sh
+  Sonic Mania.sh
+  Sonic Robo Blast 2 Kart.sh
+  Spelunky.sh
+  Super Crate Box.sh
+  Trigger Rally.sh
+  Ultima VI (Nuvie Engine).sh
+  Ultimate Stunts.sh
+  VanillaRA.sh
+  VanillaTD.sh
+  Warzone 2100.sh
+  Widelands.sh
+  Xmoto.sh
+--- PortMaster present: True
+--- gamelist present: True

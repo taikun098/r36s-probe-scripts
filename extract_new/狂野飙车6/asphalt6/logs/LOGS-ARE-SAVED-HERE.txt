@@ -1,0 +1,1 @@
+After a failure, send the newest asphalt6-*.log file from this folder.

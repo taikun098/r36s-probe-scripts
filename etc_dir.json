@@ -1,0 +1,82 @@
+[
+  {
+    "name": "emulationstation",
+    "path": "files/ROOTFS/etc/emulationstation",
+    "sha": "793255c24fce8618d3b0e91b1099b656d16ea5a5",
+    "size": 0,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/emulationstation",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/793255c24fce8618d3b0e91b1099b656d16ea5a5",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/emulationstation?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/793255c24fce8618d3b0e91b1099b656d16ea5a5",
+      "html": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/emulationstation"
+    }
+  },
+  {
+    "name": "hostname",
+    "path": "files/ROOTFS/etc/hostname",
+    "sha": "461f1b283ef07f6c262f1728035d7fc0fa8fed93",
+    "size": 13,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/hostname?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/hostname",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/461f1b283ef07f6c262f1728035d7fc0fa8fed93",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/hostname",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/hostname?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/461f1b283ef07f6c262f1728035d7fc0fa8fed93",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/hostname"
+    }
+  },
+  {
+    "name": "hosts",
+    "path": "files/ROOTFS/etc/hosts",
+    "sha": "ef8580d06c356f3d942d4c12f3d2afa613cf4315",
+    "size": 152,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/hosts?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/hosts",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/ef8580d06c356f3d942d4c12f3d2afa613cf4315",
+    "download_url": "https://raw.githubusercontent.com/southoz/dArkOSRE-R36/main/files/ROOTFS/etc/hosts",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/hosts?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/blobs/ef8580d06c356f3d942d4c12f3d2afa613cf4315",
+      "html": "https://github.com/southoz/dArkOSRE-R36/blob/main/files/ROOTFS/etc/hosts"
+    }
+  },
+  {
+    "name": "systemd",
+    "path": "files/ROOTFS/etc/systemd",
+    "sha": "a3fa05d79af447f19648c58d0e509875d7b083d7",
+    "size": 0,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/systemd?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/systemd",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/a3fa05d79af447f19648c58d0e509875d7b083d7",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/systemd?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/a3fa05d79af447f19648c58d0e509875d7b083d7",
+      "html": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/systemd"
+    }
+  },
+  {
+    "name": "update-motd.d",
+    "path": "files/ROOTFS/etc/update-motd.d",
+    "sha": "9f05c15142d2b8c25be8affd5edc2061fc810b72",
+    "size": 0,
+    "url": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/update-motd.d?ref=main",
+    "html_url": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/update-motd.d",
+    "git_url": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/9f05c15142d2b8c25be8affd5edc2061fc810b72",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/southoz/dArkOSRE-R36/contents/files/ROOTFS/etc/update-motd.d?ref=main",
+      "git": "https://api.github.com/repos/southoz/dArkOSRE-R36/git/trees/9f05c15142d2b8c25be8affd5edc2061fc810b72",
+      "html": "https://github.com/southoz/dArkOSRE-R36/tree/main/files/ROOTFS/etc/update-motd.d"
+    }
+  }
+]

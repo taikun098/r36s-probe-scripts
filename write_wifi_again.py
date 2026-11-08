@@ -1,0 +1,27 @@
+import paramiko, io
+c=paramiko.SSHClient()
+c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect('192.168.0.30', username='user', password='******', timeout=10, allow_agent=False, look_for_keys=False)
+def run(cmd):
+    i,o,e=c.exec_command(cmd)
+    out=o.read().decode('utf-8','replace')
+    err=e.read().decode('utf-8','replace')
+    return out, err
+S='echo 1 | sudo -S '
+print('=== 重新挂载 ===')
+out,err=run(S+'mkdir -p /mnt/r36s; sudo mount /dev/sdb2 /mnt/r36s 2>&1; echo M=$?')
+print(out if out else err)
+print('\n=== 检查现有 wifi.conf ===')
+out,err=run(S+'ls -la /mnt/r36s/etc/modules-load.d/ 2>&1')
+print(out if out else err)
+print('\n=== 写入 wifi.conf ===')
+sf=c.open_sftp()
+sf.putfo(io.BytesIO(b'r8188eu\n'), '/tmp/wifi.conf')
+out,err=run(S+'cp /tmp/wifi.conf /mnt/r36s/etc/modules-load.d/wifi.conf; echo cp=$?; cat /mnt/r36s/etc/modules-load.d/wifi.conf')
+print(out if out else err)
+print('\n=== sync + 立即验证 ===')
+out,err=run(S+'sync; echo synced')
+print(out if out else err)
+out,err=run(S+'cat /mnt/r36s/etc/modules-load.d/wifi.conf 2>&1')
+print('验证 wifi.conf:', out if out else err)
+c.close()

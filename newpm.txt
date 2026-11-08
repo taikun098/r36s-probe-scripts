@@ -1,0 +1,12 @@
+file exists: True
+size: 12572411
+zip entries: 29
+=== mod_ArkOS: 0
+=== mod_: 0
+=== control.txt: 1
+   PortMaster/control.txt
+=== device_info: 1
+   PortMaster/device_info.txt
+=== funcs: 0
+=== PortMaster.sh: 1
+   PortMaster/PortMaster.sh

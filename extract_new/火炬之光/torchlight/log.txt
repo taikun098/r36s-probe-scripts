@@ -1,0 +1,624 @@
+[SHIM] tl_compat_probe(__sF=0xffff8ea9c8c0 stride=152 x3)
+@@@FARM ./farm
+  LD_LIBRARY_PATH=/roms/ports/torchlight/libs.aarch64:/roms/ports/torchlight/farm:/usr/lib/compat/
+  [入口名] libEGL.so 由 ./farm 应答
+  [入口名] libGLESv3.so 由 ./farm 应答
+  [入口名] libGLESv2.so 由 ./farm 应答
+  [入口名] libz.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] libandroid.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] liblog.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] libaaudio.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] libdl.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] libm.so 由 /roms/ports/torchlight/libs.aarch64 应答
+  [入口名] libc.so 由 /roms/ports/torchlight/libs.aarch64 应答
+[SHIM] __system_property_get("ro.arch" -> "")
+@@@LOAD_CHAIN (顺序即客端可见的作用域顺序)
+  0xffff8d708000 ./farm/libtorchlight_scrubbed.so
+  0xffff8d6e0000 /storage/roms/ports/torchlight/farm/libEGL.so
+  0xffff8d6c0000 /storage/roms/ports/torchlight/farm/libGLESv3.so
+  0xffff8d6a0000 /storage/roms/ports/torchlight/farm/libGLESv2.so
+  0xffff8d680000 /roms/ports/torchlight/libs.aarch64/libz.so
+  0xffff8d660000 /roms/ports/torchlight/libs.aarch64/libandroid.so
+  0xffff8d640000 /roms/ports/torchlight/libs.aarch64/liblog.so
+  0xffff8d620000 /roms/ports/torchlight/libs.aarch64/libaaudio.so
+  0xffff8d600000 /roms/ports/torchlight/libs.aarch64/libdl.so
+  0xffff8d5e0000 /roms/ports/torchlight/libs.aarch64/libm.so
+  0xffff8d5c0000 /roms/ports/torchlight/libs.aarch64/libc.so
+  0xffff8d580000 /usr/lib/libGLESv2.so.2
+  0xffff8d540000 /usr/lib/libz.so.1
+  0xffff8d490000 /usr/lib/libm.so.6
+  0xffff8d450000 /usr/lib/libmali-hook.so.1
+  0xffff89ab0000 /usr/lib/libmali.so.1
+  0xffff89a70000 /usr/lib/libdrm.so.2
+  0xffff89810000 /usr/lib/libstdc++.so.6
+  0xffff897d0000 /usr/lib/libgcc_s.so.1
+@@@ENTRY ANativeActivity_onCreate=0xffff8e034c28 base=0xffff8d708000 offset=+0x92cc28
+[STAGE 9] native 加载通过：映射 + 重定位 + 绑定 + ctor 全部执行完。
+@@@EGL_HOST video=wayland XDG_RUNTIME_DIR=/var/run/0-runtime-dir WAYLAND_DISPLAY=wayland-1
+@@@EGL_HOST_DRIVER SDL 实际选中的后端=wayland（上一行的 video= 只是脚本要求的环境变量值）
+Could not open module param file '/sys/module/bifrost_kbase/parameters/large_page_conf'
+@@@EGL_HOST_WINSTATE flags=0xa 显示=0 全屏=0 OpenGL=1 最小化=0 焦点=0 SDL尺寸=1024x768
+@@@EGL_HOST_SHOWN SDL_ShowWindow 后 flags=0x6 显示=1 隐藏=0 全屏=0 驱动=wayland
+@@@EGL_HOST_FULLSCR 请求=0x9 rc=0 flags=0x7 全屏=1 焦点=0 SDL尺寸=1024x768->1024x768 drawable=1024x768
+@@@EGL_HOST_ES 向 SDL 要的是 ES 3.2
+@@@EGL_HOST_GL VENDOR="ARM" RENDERER="Mali-G52" VERSION="OpenGL ES 3.2 v1.g29p1-12eac0.d6e9c0f8499d70cc285f3f0ca2ede780"
+@@@EGL_HOST 主线程已解绑（客端线程可以 makeCurrent 了）
+@@@EGL_HOST window=0xaaaac2932da0 drawable=1024x768 display=0xaaaac2898390 surf=0xaaaac28c7e10 ctx=0xaaaac2930490 cfg=0xaaaac28cbf58
+@@@EGL_HOST_ADOPTED 窗口口径改用 drawable 1024x768（脚本要的是1024x768）
+[GPTK]: Running in UINPUT output mode.
+[SHIM-CALLED] tl_audio_init_host
+@@@AUDIO_HOST init=0（0=SDL 音频设备就位）
+@@@ENTRY_CALL activity=0xaaaac2882ca0 callbacks=0xaaaac2882c10(+0) data=/roms/ports/torchlight/gamedata(+32/+40) sdk=31(+48) assetMgr=0xffff8ea691a8(+64) instance+56=(nil)(必须为 0)
+[SHIM-CALLED] AConfiguration_new
+[SHIM-CALLED] AConfiguration_fromAssetManager
+[SHIM] ALooper_prepare(opts=0x1)
+[SHIM] ALooper_addFd(fd=19 ident=1 events=0x1)
+[SHIM] ALooper_pollOnce(timeout=-1 looper=0xffff78000b90)
+@@@ENTRY_RETURN（onCreate 等 worker 置 running 才返回，见 0x92cc28）
+@@@CALLBACKS table=0xaaaac2882c10
+  +0   posts=10   APP_CMD_START                                              ./farm/libtorchlight_scrubbed.so(+0x92d38c) [偏移吻合]
+  +8   posts=11   APP_CMD_RESUME                                             ./farm/libtorchlight_scrubbed.so(+0x92d2a0) [偏移吻合]
+  +16  posts=12   APP_CMD_SAVE_STATE（写完等 app+260）                  ./farm/libtorchlight_scrubbed.so(+0x92d2ac) [偏移吻合]
+  +24  posts=13   APP_CMD_PAUSE                                              ./farm/libtorchlight_scrubbed.so(+0x92d294) [偏移吻合]
+  +32  posts=14   APP_CMD_STOP                                               ./farm/libtorchlight_scrubbed.so(+0x92d398) [偏移吻合]
+  +40  posts=15   写 15 后 close 双管道 + 销毁 mutex/cond + free(app)：宿主绝不调 ./farm/libtorchlight_scrubbed.so(+0x92cf9c) [偏移吻合]
+  +48  posts=6/7  arg 非 0 = GAINED_FOCUS(6)，否则 LOST_FOCUS(7)         ./farm/libtorchlight_scrubbed.so(+0x92d3a4) [偏移吻合]
+  +56  posts=2,1  唯一窗口格：旧 pending 先 TERM，存 app+280、写 1，等 app+72 归位 ./farm/libtorchlight_scrubbed.so(+0x92d130) [偏移吻合]
+  +64  posts=3    APP_CMD_WINDOW_RESIZED                                     ./farm/libtorchlight_scrubbed.so(+0x92d1ec) [偏移吻合]
+  +72  posts=4    APP_CMD_WINDOW_REDRAW_NEEDED（窗口参数被丢掉）    ./farm/libtorchlight_scrubbed.so(+0x92d144) [偏移吻合]
+  +80  posts=2    APP_CMD_TERM_WINDOW（窗口参数 NULL）                 ./farm/libtorchlight_scrubbed.so(+0x92d138) [偏移吻合]
+  +88  posts=0    INPUT_CHANGED：存 app+272，写 0，等 app+64 归位    ./farm/libtorchlight_scrubbed.so(+0x92d074) [偏移吻合]
+  +96  posts=0    INPUT_CHANGED（队列 NULL）                             ./farm/libtorchlight_scrubbed.so(+0x92d07c) [偏移吻合]
+  +104 posts=5    CONTENT_RECT_CHANGED（16 B 写 app+80）                  ./farm/libtorchlight_scrubbed.so(+0x92cec4) [偏移吻合]
+  +112 posts=8    APP_CMD_CONFIG_CHANGED                                     ./farm/libtorchlight_scrubbed.so(+0x92ce1c) [偏移吻合]
+  +120 posts=9    APP_CMD_LOW_MEMORY                                         ./farm/libtorchlight_scrubbed.so(+0x92d088) [偏移吻合]
+@@@APP_DUMP app=0xaaaac2997460（activity+56，客端自填）
+  +24   activity=0xaaaac2882ca0
+  +32   config=0xffff78000b70
+  +40   savedState=(nil) size=0
+  +56   looper=0xffff78000b90
+  +64   inputQueue=(nil)
+  +72   window=(nil)
+  +8    onAppCmd=0xffff8de69a0c onInputEvent=0xffff8de69ab4
+  +96   activityState=0 destroyRequested=0
+  +192  msgread=19 msgwrite=20 thread=281472906686592
+  +208  cmdSource{ident=1 data=0xaaaac2997460}
+  +232  inputSource{ident=2 data=0xaaaac2997460}
+  +256  running=1 stateSaved=0 destroyed=0 pendingInput=(nil) pendingWindow=(nil)
+@@@ENGINE_READY onAppCmd=0xffff8de69a0c onInputEvent=0xffff8de69ab4（等 0 ms）
+[SHIM] tl_host_window_create(1024x768（宿主伪造，非合成器窗口）)
+@@@LIFECYCLE call +0 posts=10
+[SHIM] ALooper_pollOnce→命中(fd=19 ident=1 revents=0x1)
+[SHIM] ALooper_pollOnce(timeout=-1 looper=0xffff78000b90)
+@@@LIFECYCLE back +0
+@@@LIFECYCLE call +8 posts=11
+[SHIM] ALooper_pollOnce→命中(fd=19 ident=1 revents=0x1)
+[SHIM] ALooper_pollOnce(timeout=-1 looper=0xffff78000b90)
+@@@LIFECYCLE back +8
+[SHIM] tl_host_input_queue_create(读端 fd=21（宿主伪造）)
+@@@INPUT queue=0xaaaac2997770（宿主伪造）
+@@@INPUT call +88 posts=0
+[SHIM] ALooper_pollOnce→命中(fd=19 ident=1 revents=0x1)
+[SHIM] AInputQueue_attachLooper(looper=0xffff78000b90 ident=2 cb=(nil) data=0xaaaac2997548)
+[SHIM] ALooper_addFd(fd=21 ident=2 events=0x1)
+[SHIM] ALooper_pollOnce(timeout=-1 looper=0xffff78000b90)
+@@@INPUT back +88 app+56(looper)=0xffff78000b90 app+64(inputQueue)=0xaaaac2997770
+@@@PAD 找到 node=/dev/input/event3 name=retrogame_joypad
+@@@PAD 节点能力 EV_KEY(96 字节): 304 305 307 308 310 311 312 313 314 315 316 317 318 544 545 546 547
+@@@PAD 节点能力 EV_ABS(8 字节): 0[min=-1800 max=1800 flat=54] 1[min=-1800 max=1800 flat=54] 3[min=-1800 max=1800 flat=54] 4[min=-1800 max=1800 flat=54]
+@@@PAD 轴接线 ABS_X→轴0(左杆X) 范围=-1800..1800 flat=54
+@@@PAD 轴接线 ABS_Y→轴1(左杆Y) 范围=-1800..1800 flat=54
+@@@PAD 轴接线 ABS_RX→轴11(右杆X) 范围=-1800..1800 flat=54
+@@@PAD 轴接线 ABS_RY→轴14(右杆Y) 范围=-1800..1800 flat=54
+@@@PAD 轴接线 ABS_Z→轴17(LTRIGGER) 范围=0..0 flat=0
+@@@PAD 轴接线 ABS_RZ→轴18(RTRIGGER) 范围=0..0 flat=0
+@@@PAD 轴接线 ABS_GAS→轴22(GAS) 范围=0..0 flat=0
+@@@PAD 轴接线 ABS_BRAKE→轴23(BRAKE) 范围=0..0 flat=0
+@@@PAD 桥已起 node=/dev/input/event3 轴=8 路 source=0x1000010（key 0x401）尺寸=1024x768（TL_PAD=0 关桥）
+@@@PAD start=0（0=桥已起）
+@@@LIFECYCLE call +56 posts=2,1 arg=0xaaaac2997750
+[SHIM] ALooper_pollOnce→命中(fd=19 ident=1 revents=0x1)
+[SHIM-CALLED] __android_log_print
+[torchlight] window up: 1024x768@@@LIFECYCLE back +56
+
+@@@LIFECYCLE call +48 posts=6/7 arg=0x1
+@@@LIFECYCLE back +48
+@@@APP_RECHECK app+72=0xaaaac2997750 app+280=0xaaaac2997750 app+8(onAppCmd)=0xffff8de69a0c app+196=20
+@@@LIFECYCLE_DONE window=0xaaaac2997750 1024x768
+[SHIM] fopen(/roms/ports/torchlight/gamedata/game_data.txt "rb" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/RTSLib_Lighting.glsl "rb" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/args.txt "rb" -> NULL)
+[torchlight] starting: torchlight --width 1024 --height 768 --ogre-media /roms/ports/torchlight/gamedata/ --game-data /roms/ports/torchlight/gamedata/ --console-ui /roms/ports/torchlight/gamedata/console_ui
+[SHIM] fopen(/roms/ports/torchlight/gamedata/config.txt "rb" -> FILE*)
+[SHIM] stat("/roms/ports/torchlight/gamedata/pak.zip")
+[SHIM] stat("/roms/ports/torchlight/gamedata/RTShaderLib")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/pak.zip")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/save/sharedstash.bin")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/save/0.svt")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/game_data.txt")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/BossAnticipation.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/BossFight.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/BossResolution.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/Cavern.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/Crypt.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] stat("/roms/ports/torchlight/gamedata/music/Fortress.ogg")
+[SHIM] stat("/roms/ports/torchlight/gamedata/")
+[SHIM] fopen(/roms/ports/torchlight/gamedata/save/settings.txt "rb" -> NULL)
+[EGL] eglGetDisplay((nil)) -> 宿主 display 0xaaaac2898390
+[EGL] eglInitialize(0xaaaac2898390) -> TRUE 1.4（宿主 display 已由 SDL 初始化）
+[SHIM] fopen(/roms/ports/torchlight/gamedata/audio_silent "rb" -> NULL)
+[SHIM-CALLED] AAudio_createStreamBuilder
+[SHIM] AAudioStreamBuilder_openStream(I16/2ch 48000 Hz cap=16384 帧（设备延迟到 requestStart）)
+[SHIM] AAudioStream_setBufferSizeInFrames(4096)
+[SHIM] AAudioStream_requestStart(SDL 设备 2：48000 Hz I16 2ch samples=1024)
+[EGL] eglGetDisplay((nil)) -> 宿主 display 0xaaaac2898390
+[EGL] eglInitialize(0xaaaac2898390) -> TRUE 1.4（宿主 display 已由 SDL 初始化）
+[EGL] eglChooseConfig(size=0) -> 宿主 config (nil)
+[EGL] eglChooseConfig(size=1) -> 宿主 config 0xaaaac28cbf58
+[SHIM] ANativeWindow_setBuffersGeometry(0x0 fmt=0x0)
+[EGL] eglCreateWindowSurface(伪造窗 0xaaaac2997750) -> 宿主表面 0xaaaac28c7e10
+[EGL] eglBindAPI(0x30a0) -> 1
+[EGL] eglCreateContext(share=(nil) ver=3) -> 真上下文 0xffff7801c470
+[EGL] eglMakeCurrent(surf=0xaaaac28c7e10 ctx=0xffff7801c470) -> 1 err=0x3000
+[SHIM] fopen(/roms/ports/torchlight/gamedata/shadercache.bin "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/pak.zip "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/RTSSamplers.material "rbe" -> FILE*)
+  ... 客端线程运行中 (1/持续) RSS=37428 KB 翻页=0 窗=0 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/OgreUnifiedShader.h "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/HLSL_SM4Support.hlsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/GLSL_GL3Support.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/FFPLib_Transform.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/RTSLib_Colour.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/FFPLib_Texturing.glsl "rbe" -> FILE*)
+[SHIM-CALLED] __strchr_chk
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/OgreUnifiedShader.h "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/HLSL_SM4Support.hlsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/GLSL_GL3Support.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/RTSLib_Colour.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/FFPLib_Texturing.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/OgreUnifiedShader.h "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/HLSL_SM4Support.hlsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/Main/GLSL_GL3Support.glsl "rbe" -> FILE*)
+[SHIM] fopen(/roms/ports/torchlight/gamedata/RTShaderLib/FFPLib_Transform.glsl "rbe" -> FILE*)
+@@@SWAP_KIND 第1次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+  ... 客端线程运行中 (2/持续) RSS=230496 KB 翻页=1 窗=1 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (3/持续) RSS=292708 KB 翻页=1 窗=1 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@SWAP_KIND 第2次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+  ... 客端线程运行中 (4/持续) RSS=294732 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (5/持续) RSS=302112 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=0 轴帧=0 未映射=0
+  ... 客端线程运行中 (6/持续) RSS=303204 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (7/持续) RSS=305632 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (8/持续) RSS=307476 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (9/持续) RSS=309584 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (10/持续) RSS=311956 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=0 轴帧=0 未映射=0
+  ... 客端线程运行中 (11/持续) RSS=313800 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=0 轴帧=0 未映射=0
+@@@PAD 计数 键=0 轴帧=0 未映射=0
+  ... 客端线程运行中 (21/持续) RSS=343292 KB 翻页=2 窗=2 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce→命中(fd=19 ident=1 revents=0x1)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM-CALLED] ALooper_pollOnce→空转(超时/无事件)
+@@@SWAP_KIND 第3次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+@@@SWAP_KIND 第4次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+@@@SWAP_KIND 第5次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+@@@SWAP_KIND 第6次 打在=宿主窗 surface=0xaaaac28c7e10 宿主窗表面=0xaaaac28c7e10 该表面=1024x768 type=0xffffffff 本线程ctx=0xffff7801c470
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] ALooper_pollOnce(timeout=0 looper=0xffff78000b90)
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000b70 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000b70 handled=1)
+[SHIM-CALLED] AInputQueue_getEvent→队列已空
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000b90 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000b90 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000bb0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000bb0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000bd0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000bd0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000bf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000bf0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c10 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c10 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c30 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c30 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c50 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c50 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c70 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c70 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c90 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c90 handled=1)
+@@@PAD 计数 键=10 轴帧=0 未映射=0
+[SHIM] tl_host_input_key(action=0 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000c90 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000c90 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cb0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AInputEvent_getType(1)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cb0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cd0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cd0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=97 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(97)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=96 src=0x401 环内=0)
+[SHIM] ALooper_pollOnce→命中(fd=21 ident=2 revents=0x1)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(96)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=96 src=0x401 环内=0)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000d10 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(96)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000d10 handled=1)
+  ... 客端线程运行中 (31/持续) RSS=370312 KB 翻页=546 窗=546 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=20 轴帧=0 未映射=0
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000d10 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000d10 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000cf0 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000cf0 handled=1)
+[SHIM] tl_host_input_key(action=0 keycode=20 src=0x401 环内=0)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000d30 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(0)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000d30 handled=1)
+[SHIM] tl_host_input_key(action=1 keycode=20 src=0x401 环内=0)
+[SHIM] AInputQueue_getEvent→取到(type=1 剩余=0)
+[SHIM] AInputQueue_preDispatchEvent(event=0xffff54000d30 -> 0（交客端处理）)
+[SHIM] AInputEvent_getSource(0x401)
+[SHIM] AKeyEvent_getKeyCode(20)
+[SHIM] AKeyEvent_getAction(1)
+[SHIM] AInputQueue_finishEvent(event=0xffff54000d30 handled=1)
+@@@PAD 计数 键=38 轴帧=0 未映射=0
+  ... 客端线程运行中 (41/持续) RSS=371368 KB 翻页=1150 窗=1150 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+[SHIM-写] 客端第 1 次以写/追加模式开文件："/roms/ports/torchlight/gamedata/save/settings.txt" mode="wbe" -> FILE*
+@@@PAD 计数 键=58 轴帧=0 未映射=0
+  ... 客端线程运行中 (51/持续) RSS=371632 KB 翻页=1753 窗=1753 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=80 轴帧=0 未映射=0
+  ... 客端线程运行中 (61/持续) RSS=371632 KB 翻页=2357 窗=2357 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=100 轴帧=0 未映射=0
+[SHIM-CALLED] AAudioStream_requestStop
+[SHIM] AAudioStream_write(超时/停机且零帧写入 -> TIMEOUT（要 1024 帧）)
+[SHIM-CALLED] AAudioStream_close
+[EGL] eglMakeCurrent(surf=(nil) ctx=(nil)) -> 1 err=0x3000
+[EGL] eglDestroySurface(宿主表面)：忽略（生命周期归宿主）
+[EGL] eglTerminate(0xaaaac2898390)：忽略（窗口归宿主，客端退出后再收）
+[EGL] eglMakeCurrent(surf=(nil) ctx=(nil)) -> 1 err=0x3000
+[EGL] eglTerminate(0xaaaac2898390)：忽略（窗口归宿主，客端退出后再收）
+[EGL] eglGetDisplay((nil)) -> 宿主 display 0xaaaac2898390
+[EGL] eglInitialize(0xaaaac2898390) -> TRUE 1.4（宿主 display 已由 SDL 初始化）
+[SHIM] AAudioStreamBuilder_openStream(I16/2ch 48000 Hz cap=16384 帧（设备延迟到 requestStart）)
+[SHIM] AAudioStream_setBufferSizeInFrames(4096)
+[SHIM] AAudioStream_requestStart(SDL 设备 2：48000 Hz I16 2ch samples=1024)
+[EGL] eglChooseConfig(size=0) -> 宿主 config (nil)
+[SHIM] ANativeWindow_setBuffersGeometry(0x0 fmt=0x0)
+[EGL] eglCreateWindowSurface(伪造窗 0xaaaac2997750) -> 宿主表面 0xaaaac28c7e10
+[EGL] eglBindAPI(0x30a0) -> 1
+[EGL] eglCreateContext(share=(nil) ver=3) -> 真上下文 0xffff7b92ab20
+@@@PAD 计数 键=108 轴帧=0 未映射=0
+  ... 客端线程运行中 (71/持续) RSS=357324 KB 翻页=2616 窗=2616 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=108 轴帧=0 未映射=0
+@@@PAD 计数 键=108 轴帧=0 未映射=0
+  ... 客端线程运行中 (81/持续) RSS=553368 KB 翻页=2642 窗=2642 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] AMotionEvent_getAxisValue(axis=0 index=0 -> -0.125)
+[SHIM] AMotionEvent_getAxisValue(axis=1 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=11 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=14 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=17 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=23 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=18 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=22 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=15 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=16 index=0 -> 0.000)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] AMotionEvent_getAxisValue(axis=0 index=0 -> -0.812)
+[SHIM] AMotionEvent_getAxisValue(axis=1 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=11 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=14 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=17 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=23 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=18 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=22 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=15 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=16 index=0 -> 0.000)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=1)
+[SHIM] tl_host_input_axes(n=24 环内=2)
+[SHIM] AMotionEvent_getAxisValue(axis=0 index=0 -> -1.000)
+[SHIM] AMotionEvent_getAxisValue(axis=1 index=0 -> -0.094)
+[SHIM] AMotionEvent_getAxisValue(axis=11 index=0 -> 0.000)
+[SHIM] AMotionEvent_getAxisValue(axis=14 index=0 -> 0.000)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=1)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+[SHIM] tl_host_input_axes(n=24 环内=0)
+@@@PAD 计数 键=116 轴帧=55 未映射=0
+  ... 客端线程运行中 (91/持续) RSS=569656 KB 翻页=3027 窗=3027 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=130 轴帧=103 未映射=0
+  ... 客端线程运行中 (101/持续) RSS=569456 KB 翻页=3404 窗=3404 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=146 轴帧=243 未映射=0
+  ... 客端线程运行中 (111/持续) RSS=574032 KB 翻页=3713 窗=3713 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+  ... 客端线程运行中 (121/持续) RSS=572432 KB 翻页=4015 窗=4015 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+  ... 客端线程运行中 (131/持续) RSS=567852 KB 翻页=4316 窗=4316 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+  ... 客端线程运行中 (141/持续) RSS=568856 KB 翻页=4625 窗=4625 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+@@@PAD 计数 键=152 轴帧=271 未映射=0
+  ... 客端线程运行中 (151/持续) RSS=569008 KB 翻页=4941 窗=4941 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=152 轴帧=344 未映射=0
+  ... 客端线程运行中 (161/持续) RSS=581384 KB 翻页=5158 窗=5158 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=158 轴帧=371 未映射=0
+  ... 客端线程运行中 (171/持续) RSS=585944 KB 翻页=5369 窗=5369 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=164 轴帧=515 未映射=0
+  ... 客端线程运行中 (181/持续) RSS=589688 KB 翻页=5641 窗=5641 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (191/持续) RSS=598780 KB 翻页=5888 窗=5888 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=216 轴帧=657 未映射=0
+@@@PAD 计数 键=220 轴帧=657 未映射=0
+  ... 客端线程运行中 (201/持续) RSS=606900 KB 翻页=6238 窗=6238 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=220 轴帧=657 未映射=0
+@@@PAD 计数 键=222 轴帧=672 未映射=0
+  ... 客端线程运行中 (211/持续) RSS=610964 KB 翻页=6703 窗=6703 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+[SHIM-写] 客端第 3 次以写/追加模式开文件："/roms/ports/torchlight/gamedata/save/sharedstash.bin" mode="wb" -> FILE*
+[SHIM-写] 客端第 4 次以写/追加模式开文件："/roms/ports/torchlight/gamedata/save/save.tmp" mode="wb" -> FILE*
+[SHIM] AAudioStream_write(超时/停机且零帧写入 -> TIMEOUT（要 1024 帧）)
+[SHIM-写] 客端第 5 次以写/追加模式开文件："/roms/ports/torchlight/gamedata/shadercache.bin.part" mode="wbe" -> FILE*
+[EGL] eglDestroySurface(宿主表面)：忽略（生命周期归宿主）
+[EGL] eglTerminate(0xaaaac2898390)：忽略（窗口归宿主，客端退出后再收）
+[SHIM] AAudioStreamBuilder_openStream(I16/2ch 48000 Hz cap=16384 帧（设备延迟到 requestStart）)
+[SHIM] AAudioStream_setBufferSizeInFrames(4096)
+[SHIM] AAudioStream_requestStart(SDL 设备 2：48000 Hz I16 2ch samples=1024)
+[SHIM] ANativeWindow_setBuffersGeometry(0x0 fmt=0x0)
+[EGL] eglCreateWindowSurface(伪造窗 0xaaaac2997750) -> 宿主表面 0xaaaac28c7e10
+[EGL] eglBindAPI(0x30a0) -> 1
+[EGL] eglCreateContext(share=(nil) ver=3) -> 真上下文 0xffff4944bc40
+@@@PAD 计数 键=226 轴帧=708 未映射=0
+  ... 客端线程运行中 (221/持续) RSS=541988 KB 翻页=6792 窗=6792 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=226 轴帧=713 未映射=0
+@@@PAD 计数 键=226 轴帧=713 未映射=0
+  ... 客端线程运行中 (231/持续) RSS=536528 KB 翻页=6792 窗=6792 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=226 轴帧=713 未映射=0
+@@@PAD 计数 键=226 轴帧=713 未映射=0
+  ... 客端线程运行中 (241/持续) RSS=541084 KB 翻页=6792 窗=6792 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=226 轴帧=713 未映射=0
+[SHIM] AAudioStream_write(超时/停机且零帧写入 -> TIMEOUT（要 1024 帧）)
+[EGL] eglDestroySurface(宿主表面)：忽略（生命周期归宿主）
+@@@PAD 计数 键=232 轴帧=713 未映射=0
+[SHIM] AAudioStreamBuilder_openStream(I16/2ch 48000 Hz cap=16384 帧（设备延迟到 requestStart）)
+[SHIM] AAudioStream_setBufferSizeInFrames(4096)
+[SHIM] AAudioStream_requestStart(SDL 设备 2：48000 Hz I16 2ch samples=1024)
+[SHIM] ANativeWindow_setBuffersGeometry(0x0 fmt=0x0)
+  ... 客端线程运行中 (251/持续) RSS=544692 KB 翻页=7089 窗=7089 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+[SHIM] AAudioStream_write(超时/停机且零帧写入 -> TIMEOUT（要 1024 帧）)
+[SHIM] AAudioStreamBuilder_openStream(I16/2ch 48000 Hz cap=16384 帧（设备延迟到 requestStart）)
+[SHIM] AAudioStream_setBufferSizeInFrames(4096)
+[SHIM] AAudioStream_requestStart(SDL 设备 2：48000 Hz I16 2ch samples=1024)
+[SHIM] ANativeWindow_setBuffersGeometry(0x0 fmt=0x0)
+  ... 客端线程运行中 (261/持续) RSS=516628 KB 翻页=7090 窗=7090 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+  ... 客端线程运行中 (271/持续) RSS=532816 KB 翻页=7092 窗=7092 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+  ... 客端线程运行中 (281/持续) RSS=534088 KB 翻页=7092 窗=7092 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+@@@PAD 计数 键=234 轴帧=732 未映射=0
+  ... 客端线程运行中 (291/持续) RSS=566020 KB 翻页=7193 窗=7193 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (301/持续) RSS=561108 KB 翻页=7485 窗=7485 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=346 轴帧=987 未映射=0
+  ... 客端线程运行中 (311/持续) RSS=560640 KB 翻页=7802 窗=7802 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (321/持续) RSS=563932 KB 翻页=8099 窗=8099 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (331/持续) RSS=571284 KB 翻页=8350 窗=8350 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=482 轴帧=1174 未映射=0
+  ... 客端线程运行中 (341/持续) RSS=571440 KB 翻页=8598 窗=8598 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+  ... 客端线程运行中 (351/持续) RSS=574048 KB 翻页=8841 窗=8841 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=602 轴帧=1418 未映射=0
+  ... 客端线程运行中 (361/持续) RSS=572984 KB 翻页=9127 窗=9127 他=0 回读 n=0 本次=0.0ms 平均=0.0ms 最大=0.0ms 慢(>20ms)=0 泵=-2
+@@@PAD 计数 键=608 轴帧=1484 未映射=0
+@@@PAD ★ START+SELECT 第 1/2 次（1200 ms 窗口内）
+26703
+26704
+/storage/roms/ports/torchlight.sh: line 99: 26704 Killed                     SDL_GAMECONTROLLERCONFIG="$sdl_controllerconfig" ./torchlight-loader ./farm/libtorchlight_scrubbed.so ./farm
+/storage/roms/ports/torchlight.sh: line 100: 26703 Killed                     $GPTOKEYB "torchlight-loader" -c "$GAMEDIR/torchlight.gptk"

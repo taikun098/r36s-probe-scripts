@@ -1,0 +1,30 @@
+===== dArkOSRE-R36(03082026) =====
+body-preview: ## Update to dArkOSRE-R36 - R36 Control Centre to manage LEDs, gamma, audio path and boot volume - Device selector for Windows to manage dtb files. - Added Support for all SoySauce Devices - Updated Emulationstation to fix the Screenscraper login and Volume indicator for R36 devices. - Advanced Drastic and Drastic selectable via Emulationstation Emulators. - r36_config replaces rg351mp and audiopath services - Fix Back Ground Music that impacted single SD Card users. - Fix Switch SD Scri
+ASSETS: 0
+===== darkOS-G80CA-RE(02062026) =====
+body-preview: ## Before you do anything! - Read these instructions [Firmware Installation](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - The current dtb files you need are linked in here!  ## Align with dArkOS 01302026 Release - Fully Integrated Kodi 21.3 into the rg351mp build process with integrated missing libraries - Integrate Wifi and Bluetooth Firmware Pack thanks to Jason3x - Add [ZRam Manager](https://github.com/daffycodebug/ZRam-Manager-R36S) by daffycodebug to impro
+ASSETS: 0
+===== dArkOS-G80CA-RE(01242026) =====
+body-preview: ## Kodi Release  - Integrate Kodi 21.3 into dArkOS on a RK3326 - Create Control Recovery Script -  Support SD Card in the second slot -  See [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Kodi) for details and controls. - Include support for Gametank Emulation.  ## Firmware Installation  - See [guide](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - Panel 9 users will need to copy these [files](https://github.com/southoz/dArkOS-G80CA-RE/tree/main/files/D
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R7 =====
+body-preview: ## Fix Single SD-Card Installation 2  - retroarch.cfg was looking in roms2 for bios by default instead of roms (Thanks to Robadel over on Discord for reporting).  ## Instalation  - See [guide](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - Panel 9 users will need to copy these [files](https://github.com/southoz/dArkOS-G80CA-RE/tree/main/files/DTB/Panel9) to the boot partition  ## In progress but not quite ready. - Kodi is working in dArkOS for the RK3326, but i
+ASSETS: 0
+===== dArkOS-G80CA-RE(01242026)_Pre =====
+body-preview: ## ⚠️ Important Expectation Warnings  ***This is a pre-release for testing.***  ## Kodi Testing Release  - Kodi 23.1 has been compiled for dArkOS on the RK3326 - Software rendering, so keep your sources at 720p, the dArkOS kernel for the RK3326 has not been compiled with VPU support.  - Testing with Buck Bunny 1080p 24 FPS showed that this was the limit of the device's CPU. - Controls are available in the [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Kodi). - A number of fixes
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R6 =====
+body-preview: ## Fix Single SD-Card Installation  - es_systems.cfg was looking in roms2 for games by default instead of roms  ## Instalation  - See [guide](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - Panel 9 users will need to copy these [files](https://github.com/southoz/dArkOS-G80CA-RE/tree/main/files/DTB/Panel9) to the boot partition  [Mega](https://mega.nz/file/M7AkXCaZ#RU_cZyIJhbavk5F-nHn1Fh3a_ecFNaL1jZgeu2apgLo) SHA1 - 62F48B978177A54C5F63F583BCB0DAB4DDB78E75 
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R5 =====
+body-preview: ## Hotkey Update Release  - Replace R3 with Select in Retroarch see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Retroarch) for details. - Replace R3 with Select in Mupen64Plus see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Nintendo-64-(n64)) for details. - Replace R3 with Select in PPSSPP see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Sony-Playstation-Portable-(psp))  for details. - Replace R3 with Select in Advanced Drastic see [Wiki](https://github.com/s
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R4 =====
+body-preview: ## Advanced Drastic Release  - Replace Drastic with Advanced Drastic, see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Nintendo-DS-(nds)) for details. - Update default joystick type to Dual Shock for PSX, see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Sony-Playstation-(psx)) for details. - Game Boy Advance [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Nintendo-Gameboy-Advanced-(gba)). - Super Nintendo [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Nint
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R3 =====
+body-preview: ## Nintendo DS Release  - Fix a number of start scripts that were referencing the dtb filename to set environmental variables - Update Drastic Controls on the G80CA, see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Nintendo-DS-(nds)) for details.  ## Installation  - See [guide](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - Panel 9 users will need to copy these [files](https://github.com/southoz/dArkOS-G80CA-RE/tree/main/files/DTB/Panel9) to the boot pa
+ASSETS: 0
+===== dArkOS-G80CA-RE(01142026)_R2 =====
+body-preview: ## Maintenance with Dreamcast updated for G80CA  - Fix a permission issue with Retroarch32 - Update Retroarch32 controls and Dreamcast start script for Retrorun32 on the G80CA, see [Wiki](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Audio-and-Screen-Control) for details.  ## Instalation  - See [guide](https://github.com/southoz/dArkOS-G80CA-RE/wiki/Firmware-Installation) - Panel 9 users will need to copy these [files](https://github.com/southoz/dArkOS-G80CA-RE/tree/main/files/DTB/Panel
+ASSETS: 0

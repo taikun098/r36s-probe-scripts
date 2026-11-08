@@ -1,0 +1,10 @@
+https://www.google.com           status=200  loc=
+https://api.github.com           status=200  loc=
+https://github.com               status=200  loc=
+https://mega.nz                  status=200  loc=
+https://g.api.mega.co.nz         status=301  loc=https://mega.nz
+https://onedrive.live.com        ERR SSLError(MaxRetryError("HTTPSConnectionPool(host='onedrive.live.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)')))"))
+https://1drv.ms                  status=404  loc=
+https://mediafire.com            status=302  loc=https://www.mediafire.com/
+https://docs.google.com          status=302  loc=https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://docs.google.com/&followup=https://docs.google.com/&emr=1
+https://drive.google.com         status=302  loc=https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&osid=1&continue=https://drive.google.com/&followup=https://drive.google.com/&emr=1

@@ -1,0 +1,39 @@
+=== E:\ports\2048 full tree ===
+  2048  (dir)
+      2048.md  (220)
+      2048_libretro.so.aarch64  (88536)
+      2048_libretro.so.armhf  (64444)
+      gameinfo.xml  (171)
+      port.json  (611)
+      screenshot.jpg  (16701)
+  2048.sh  (1636)
+============================== control.txt key vars ==============================
+  export GPTOKEYB2="$ESUDO env LD_PRELOAD=$controlfolder/libinterpose.${DEVICE_ARCH}.so $controlfolder/gptokeyb2 $ESUDOKILL2"
+  export GPTOKEYB2="$ESUDO env LD_PRELOAD=$controlfolder/libinterpose.${DEVICE_ARCH}.so $controlfolder/gptokeyb2 $ESUDOKILL2"
+  export GPTOKEYB="$ESUDO $controlfolder/gptokeyb $ESUDOKILL"
+  export GPTOKEYB2="$ESUDO env LD_PRELOAD=$controlfolder/libinterpose.${DEVICE_ARCH}.so $controlfolder/gptokeyb2 $ESUDOKILL2"
+  export GPTOKEYB="$ESUDO $controlfolder/gptokeyb $ESUDOKILL"
+  export directory="roms2"
+  export directory="roms"
+  export directory="roms"
+  if [[ -e "/dev/input/by-path/platform-ff300000.usb-usb-0:1.2:1.0-event-joystick" ]]; then
+  elif [[ -e "/dev/input/by-path/platform-odroidgo2-joypad-event-joystick" ]]; then
+  elif [[ -e "/dev/input/by-path/platform-odroidgo3-joypad-event-joystick" ]]; then
+  elif [[ -e "/dev/input/by-path/platform-gameforce-gamepad-event-joystick" ]]; then
+  elif [[ -e "/dev/input/by-path/platform-singleadc-joypad-event-joystick" ]]; then
+  elif [[ -e "/dev/input/by-path/platform-gamekiddy-joypad-event-joystick" ]]; then
+============================== mod_.txt head ==============================
+#!/bin/bash
+#
+# SPDX-License-Identifier: MIT
+#
+
+## THIS FIXES ROCKNIX AND JELOS
+
+source $controlfolder/device_info.txt
+source $controlfolder/funcs.txt
+
+export GPTOKEYB2="$ESUDO env LD_PRELOAD=$controlfolder/libinterpose.${DEVICE_ARCH}.so $controlfolder/gptokeyb2 $ESUDOKILL"
+export GPTOKEYB="$ESUDO $controlfolder/gptokeyb $ESUDOKILL"
+
+[ ! -z "${CFW_NAME}" ] && [ -f "${controlfolder}/mod_${CFW_NAME}.txt" ] && source "${controlfolder}/mod_${CFW_NAME}.txt"

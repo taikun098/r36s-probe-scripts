@@ -1,0 +1,176 @@
+============================================================
+FILE: R36S-Ports管理器-v0.1.zip  (92.0 MB)
+total entries: 106
+--- first 40 entries ---
+  R36S-Ports管理器-v0.1/
+  R36S-Ports管理器-v0.1/covercache/
+  R36S-Ports管理器-v0.1/covercache/sjsc2.webp
+  R36S-Ports管理器-v0.1/covercache/gtax.png
+  R36S-Ports管理器-v0.1/covercache/ahphs.png
+  R36S-Ports管理器-v0.1/covercache/zssc.png
+  R36S-Ports管理器-v0.1/covercache/sjsmcwj.png
+  R36S-Ports管理器-v0.1/covercache/skzq.jpg
+  R36S-Ports管理器-v0.1/covercache/jpfc.png
+  R36S-Ports管理器-v0.1/covercache/swkj.png
+  R36S-Ports管理器-v0.1/covercache/mla.png
+  R36S-Ports管理器-v0.1/covercache/clrj.png
+  R36S-Ports管理器-v0.1/covercache/hyrz.jpg
+  R36S-Ports管理器-v0.1/covercache/xcp4.png
+  R36S-Ports管理器-v0.1/covercache/blbl.png
+  R36S-Ports管理器-v0.1/covercache/bilibili.png
+  R36S-Ports管理器-v0.1/covercache/gtazyc.png
+  R36S-Ports管理器-v0.1/covercache/zjfmzs.png
+  R36S-Ports管理器-v0.1/covercache/ptp2.webp
+  R36S-Ports管理器-v0.1/covercache/kdqs.jpeg
+  R36S-Ports管理器-v0.1/covercache/xdzz.png
+  R36S-Ports管理器-v0.1/covercache/twzd.png
+  R36S-Ports管理器-v0.1/covercache/cfzzx2.png
+  R36S-Ports管理器-v0.1/covercache/ymymcf.jpg
+  R36S-Ports管理器-v0.1/covercache/qmdsk.png
+  R36S-Ports管理器-v0.1/covercache/zzhx.png
+  R36S-Ports管理器-v0.1/covercache/swxb.png
+  R36S-Ports管理器-v0.1/covercache/zlxy.png
+  R36S-Ports管理器-v0.1/covercache/zzx.png
+  R36S-Ports管理器-v0.1/covercache/lklk.jpeg
+  R36S-Ports管理器-v0.1/covercache/gwlr.png
+  R36S-Ports管理器-v0.1/covercache/zgws.jpeg
+  R36S-Ports管理器-v0.1/covercache/wxgl.png
+  R36S-Ports管理器-v0.1/covercache/tgz.jpg
+  R36S-Ports管理器-v0.1/covercache/gtas.png
+  R36S-Ports管理器-v0.1/covercache/nova.png
+  R36S-Ports管理器-v0.1/covercache/nztq.png
+  R36S-Ports管理器-v0.1/covercache/rzsg.png
+  R36S-Ports管理器-v0.1/covercache/sshaa.png
+  R36S-Ports管理器-v0.1/covercache/smzh.png
+--- port-related files (2) ---
+  R36S-Ports管理器-v0.1/R36S Ports商店.sh
+  R36S Ports管理器.sh
+============================================================
+FILE: 半条命（中文）.zip  (273.4 MB)
+total entries: 3721
+--- first 40 entries ---
+  Half-Life/
+  Half-Life.sh
+  Half-Life/client_arm64.so
+  Half-Life/Copy Contents into valve folder.zip
+  Half-Life/hl_arm64.so
+  Half-Life/libxash.so
+  Half-Life/libxashmenu64.so
+  Half-Life/valve/
+  Half-Life/valve/1024_textscheme.txt
+  Half-Life/valve/1152_textscheme.txt
+  Half-Life/valve/1280_textscheme.txt
+  Half-Life/valve/1600_textscheme.txt
+  Half-Life/valve/320_textscheme.txt
+  Half-Life/valve/400_textscheme.txt
+  Half-Life/valve/512_textscheme.txt
+  Half-Life/valve/640_textscheme.txt
+  Half-Life/valve/800_textscheme.txt
+  Half-Life/valve/autoexec.cfg
+  Half-Life/valve/cached.wad
+  Half-Life/valve/cl_dlls/
+  Half-Life/valve/cl_dlls/client.dll
+  Half-Life/valve/cl_dlls/client.dylib
+  Half-Life/valve/cl_dlls/client.so
+  Half-Life/valve/cl_dlls/client64.so
+  Half-Life/valve/cl_dlls/client_arm64.so
+  Half-Life/valve/cl_dlls/DemoEditor.dll
+  Half-Life/valve/cl_dlls/GameUI.dll
+  Half-Life/valve/cl_dlls/gameui.dylib
+  Half-Life/valve/cl_dlls/gameui.so
+  Half-Life/valve/cl_dlls/particleman.dylib
+  Half-Life/valve/cl_dlls/particleman.so
+  Half-Life/valve/config.cfg
+  Half-Life/valve/credits.txt
+  Half-Life/valve/decals.wad
+  Half-Life/valve/delta.lst
+  Half-Life/valve/dlls/
+  Half-Life/valve/dlls/client.so
+  Half-Life/valve/dlls/Director.dll
+  Half-Life/valve/dlls/director.dylib
+  Half-Life/valve/dlls/director.so
+--- port-related files (1) ---
+  Half-Life.sh
+============================================================
+FILE: 土豆兄弟-新黎明.zip  (113.5 MB)
+total entries: 27
+--- first 40 entries ---
+  brotatond/
+  brotatond/README.md
+  brotatond/brotato.gptk
+  brotatond/conf/
+  brotatond/conf/Brotato/
+  brotatond/conf/Brotato/mod_loader_cache.json
+  brotatond/conf/Brotato/mod_user_profiles.json
+  brotatond/conf/Brotato/user/
+  brotatond/conf/Brotato/user/log.txt
+  brotatond/conf/Brotato/user/run_v3_0.json
+  brotatond/conf/Brotato/user/run_v3_0_01.json.bak
+  brotatond/conf/Brotato/user/save_v3_0.json
+  brotatond/conf/Brotato/user/save_v3_0_01.json.bak
+  brotatond/conf/Brotato/user/settings.json
+  brotatond/conf/pulse/
+  brotatond/conf/pulse/cookie
+  brotatond/cover.png
+  brotatond/gamedata/
+  brotatond/gamedata/brotato.pck
+  brotatond/gameinfo.xml
+  brotatond/hacksdl/
+  brotatond/hacksdl/hacksdl.aarch64.so
+  brotatond/log.txt
+  brotatond/port.json
+  brotatond/screenshot.jpg
+  brotatond/土豆兄弟-新黎明.jpg
+  土豆兄弟-新黎明.sh
+--- port-related files (2) ---
+  brotatond/port.json
+  土豆兄弟-新黎明.sh
+============================================================
+FILE: 火炬之光测试.zip  (172.5 MB)
+total entries: 168
+--- first 40 entries ---
+  τü½τé¼Σ╣ïσàë.sh
+  __MACOSX/._τü½τé¼Σ╣ïσàë.sh
+  torchlight/
+  __MACOSX/._torchlight
+  torchlight/farm/
+  __MACOSX/torchlight/._farm
+  torchlight/torchlight.sh
+  __MACOSX/torchlight/._torchlight.sh
+  torchlight/torchlight-loader
+  __MACOSX/torchlight/._torchlight-loader
+  torchlight/log.txt
+  __MACOSX/torchlight/._log.txt
+  torchlight/gamedata/
+  __MACOSX/torchlight/._gamedata
+  torchlight/conf/
+  __MACOSX/torchlight/._conf
+  torchlight/torchlight.gptk
+  __MACOSX/torchlight/._torchlight.gptk
+  torchlight/libs.aarch64/
+  __MACOSX/torchlight/._libs.aarch64
+  torchlight/farm/libGLESv2.so
+  __MACOSX/torchlight/farm/._libGLESv2.so
+  torchlight/farm/libtorchlight_scrubbed.so
+  __MACOSX/torchlight/farm/._libtorchlight_scrubbed.so
+  torchlight/farm/libGLESv3.so
+  __MACOSX/torchlight/farm/._libGLESv3.so
+  torchlight/farm/libtlcompat.so
+  __MACOSX/torchlight/farm/._libtlcompat.so
+  torchlight/farm/libEGL.so
+  __MACOSX/torchlight/farm/._libEGL.so
+  torchlight/gamedata/music/
+  __MACOSX/torchlight/gamedata/._music
+  torchlight/gamedata/game_data.txt
+  __MACOSX/torchlight/gamedata/._game_data.txt
+  torchlight/gamedata/config.txt
+  __MACOSX/torchlight/gamedata/._config.txt
+  torchlight/gamedata/pak.zip
+  __MACOSX/torchlight/gamedata/._pak.zip
+  torchlight/gamedata/RTShaderLib/
+  __MACOSX/torchlight/gamedata/._RTShaderLib
+--- port-related files (4) ---
+  τü½τé¼Σ╣ïσàë.sh
+  __MACOSX/._τü½τé¼Σ╣ïσàë.sh
+  torchlight/torchlight.sh
+  __MACOSX/torchlight/._torchlight.sh

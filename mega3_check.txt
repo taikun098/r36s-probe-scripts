@@ -1,0 +1,15 @@
+=== mega_dl3.log ===
+﻿python : STARTING mega download...
+所在位置 行:1 字符: 75
++ ... dtb_probe"; python -u mega_dl.py 2>D:\R36S_backup_20261015\darkos\meg ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (STARTING mega download...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== file sizes ===
+  dArkOS_G80CA-RE_trixie_02062026.7z 0 bytes age=968s
+  dArkOS_G80CA-RE_trixie_02062026.7z.aria2 1832 bytes age=272s
+  mega_dl.log 381 bytes age=1166s
+  mega_dl2.log 381 bytes age=593s
+  mega_dl3.log 381 bytes age=80s

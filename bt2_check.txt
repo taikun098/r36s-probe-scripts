@@ -1,0 +1,42 @@
+=== aria2_bt2.log tail ===
+                   
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+ *** Download Progress Summary as of Fri Oct 16 10:58:52 2026 *** 
+===============================================================================
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+FILE: D:/R36S_backup_20261015/darkos/dArkOS_G80CA-RE_trixie_02062026.7z
+-------------------------------------------------------------------------------
+
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+[#d3a9f7 0B/3.4GiB(0%) CN:0 SD:0 DL:0B]
+                                                                               
+
+=== files ===
+  aria2 0
+  aria2.zip 2475379
+  aria2_bt.log 25260
+  aria2_bt2.log 9543
+  aria2_od.log 1894
+  aria2_od2.log 1787
+  dArkOS_G80CA-RE_trixie_02062026.7z 0
+  dArkOS_G80CA-RE_trixie_02062026.7z.aria2 1832

@@ -1,0 +1,3 @@
+res://dlcs/ exists: True
+Open res://dlcs/
+Found dlc file for: abyssal_terrors

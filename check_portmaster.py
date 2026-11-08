@@ -1,0 +1,25 @@
+import paramiko
+c=paramiko.SSHClient()
+c.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+c.connect('192.168.0.30', username='user', password='******', timeout=10, allow_agent=False, look_for_keys=False)
+def run(cmd):
+    i,o,e=c.exec_command(cmd)
+    out=o.read().decode('utf-8','replace')
+    err=e.read().decode('utf-8','replace')
+    return out, err
+S='echo 1 | sudo -S '
+print('=== PortMaster 目录结构 ===')
+out,err=run(S+'ls /mnt/roms/ports/PortMaster/ 2>&1')
+print(out if out else err)
+print('\n=== PortMaster libs ===')
+out,err=run(S+'ls -la /mnt/roms/ports/PortMaster/libs/ 2>&1')
+print(out if out else err)
+print('\n=== 系统分区 PortMaster ===')
+out,err=run(S+'ls /mnt/r36s/opt/system/Tools/PortMaster/ 2>&1')
+print(out if out else err)
+out,err=run(S+'ls -la /mnt/r36s/opt/system/Tools/PortMaster/libs/ 2>&1 | head -20')
+print(out if out else err)
+print('\n=== xash3d 是否在 PortMaster/系统某处 ===')
+out,err=run(S+'find /mnt/roms/ports/PortMaster /mnt/r36s -name "xash3d*" 2>/dev/null | head')
+print(out if out else '(未找到其他 xash3d)')
+c.close()
